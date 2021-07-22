@@ -609,13 +609,13 @@ void list(char *arg)
 	printf("%s -d <options>\n"
 		   "  Available distributions:\n"
 		   "    %sArch linux %sbased:\n"
-		   "      %sarch, artix, %sendeavouros %smanjaro, \"manjaro-arm\"\n\n"
+		   "      %sarch, artix, %sendeavouros %smanjaro, manjaro-arm\n\n"
 		   "    %sDebian/%sUbuntu %sbased:\n"
 		   "      %sdebian, %slinuxmint, neon %spop, %sraspbian %subuntu\n\n"
 		   "    %sBSD %sbased:\n"
 		   "      %sfreebsd, %sopenbsd, %sm%sa%sc%so%ss\n\n"
 		   "    %sOther/spare distributions:\n"
-		   "      %salpine, %sfedora, %sgentoo, %sslackware, %ssolus, %s\"void\", \"opensuse-leap\", android, %sgnu, guix, %swindows, %sunknown\n\n",
+		   "      %salpine, %sfedora, %sgentoo, %sslackware, %ssolus, %svoid, opensuse-leap, android, %sgnu, guix, %swindows, %sunknown\n\n",
 		   arg,
 		   BLUE, NORMAL, BLUE, MAGENTA, GREEN,									  // Arch based colors
 		   RED, YELLOW, NORMAL, RED, GREEN, BLUE, RED, YELLOW,					  // Debian based colors
@@ -711,7 +711,7 @@ void print_ascii()
 			   "        \u00af\n\n",
 			   WHITE, YELLOW, WHITE, YELLOW, WHITE, YELLOW, WHITE, YELLOW, WHITE, YELLOW, WHITE, YELLOW);
 	}
-	else if (strcmp(version_name, "manjaro") == 0 || strcmp(version_name, "\"manjaro-arm\"") == 0)
+	else if (strcmp(version_name, "manjaro") == 0 || strcmp(version_name, "manjaro-arm") == 0)
 	{
 		printf("\033[0E\033[1C\u25b3       \u25b3   \u25e0\u25e0\u25e0\u25e0\n"
 			   " \e[0;42m          \e[0m  \e[0;42m    \e[0m\n"
@@ -734,7 +734,7 @@ void print_ascii()
 			   GREEN, WHITE, GREEN, WHITE, GREEN, WHITE, GREEN, WHITE,
 			   GREEN, WHITE, GREEN, WHITE, GREEN);
 	}
-	else if (strcmp(version_name, "\"opensuse-leap\"") == 0 || strcmp(version_name, "\"opensuse-tumbleweed\"") == 0)
+	else if (strcmp(version_name, "opensuse-leap") == 0 || strcmp(version_name, "opensuse-tumbleweed") == 0)
 	{
 		printf("\033[3E\033[3C%s|\\----/|\n"
 			   " _ /   %sO O%s\\\n"
@@ -792,7 +792,7 @@ void print_ascii()
 			   "  %sC__/%s---(_)\n\n\n",
 			   LPINK, PINK, LPINK, PINK, LPINK, PINK, LPINK);
 	}
-	else if (strcmp(version_name, "\"void\"") == 0)
+	else if (strcmp(version_name, "void") == 0)
 	{
 		printf("\033[2E\033[2C%s |\\_____/|\n"
 			   "  _\\____   |\n"
@@ -950,17 +950,17 @@ void uwu_kernel()
 		KERNEL_TO_UWU(splitted[i], "guix", "gnUwU gUwUix");
 		KERNEL_TO_UWU(splitted[i], "linuxmint", "LinUWU Miwint");
 		KERNEL_TO_UWU(splitted[i], "manjaro", "Myanjawo");
-		KERNEL_TO_UWU(splitted[i], "\"manjaro-arm\"", "Myanjawo AWM");
+		KERNEL_TO_UWU(splitted[i], "manjaro-arm", "Myanjawo AWM");
 		KERNEL_TO_UWU(splitted[i], "neon", "KDE NeOwOn");
 		KERNEL_TO_UWU(splitted[i], "nixos", "nixOwOs");
-		KERNEL_TO_UWU(splitted[i], "\"opensuse-leap\"", "OwOpenSUSE Leap");
-		KERNEL_TO_UWU(splitted[i], "\"opensuse-tumbleweed\"", "OwOpenSUSE Tumbleweed");
+		KERNEL_TO_UWU(splitted[i], "opensuse-leap", "OwOpenSUSE Leap");
+		KERNEL_TO_UWU(splitted[i], "opensuse-tumbleweed", "OwOpenSUSE Tumbleweed");
 		KERNEL_TO_UWU(splitted[i], "pop", "PopOwOS");
 		KERNEL_TO_UWU(splitted[i], "raspbian", "RaspNyan");
 		KERNEL_TO_UWU(splitted[i], "slackware", "Swackwawe");
 		KERNEL_TO_UWU(splitted[i], "solus", "sOwOlus");
 		KERNEL_TO_UWU(splitted[i], "ubuntu", "Uwuntu");
-		KERNEL_TO_UWU(splitted[i], "\"void\"", "OwOid");
+		KERNEL_TO_UWU(splitted[i], "void", "OwOid");
 		KERNEL_TO_UWU(splitted[i], "android", "Nyandroid"); // android at the end because it could be not considered as an actual distribution of gnu/linux
 
 		// BSD
@@ -999,17 +999,17 @@ void uwu_name()
 	else STRING_TO_UWU("guix", "gnUwU gUwUix");
 	else STRING_TO_UWU("linuxmint", "LinUWU Miwint");
 	else STRING_TO_UWU("manjaro", "Myanjawo");
-	else STRING_TO_UWU("\"manjaro-arm\"", "Myanjawo AWM");
+	else STRING_TO_UWU("manjaro-arm", "Myanjawo AWM");
 	else STRING_TO_UWU("neon", "KDE NeOwOn");
 	else STRING_TO_UWU("nixos", "nixOwOs");
-	else STRING_TO_UWU("\"opensuse-leap\"", "OwOpenSUSE Leap");
-	else STRING_TO_UWU("\"opensuse-tumbleweed\"", "OwOpenSUSE Tumbleweed");
+	else STRING_TO_UWU("opensuse-leap", "OwOpenSUSE Leap");
+	else STRING_TO_UWU("opensuse-tumbleweed", "OwOpenSUSE Tumbleweed");
 	else STRING_TO_UWU("pop", "PopOwOS");
 	else STRING_TO_UWU("raspbian", "RaspNyan");
 	else STRING_TO_UWU("slackware", "Swackwawe");
 	else STRING_TO_UWU("solus", "sOwOlus");
 	else STRING_TO_UWU("ubuntu", "Uwuntu");
-	else STRING_TO_UWU("\"void\"", "OwOid");
+	else STRING_TO_UWU("void", "OwOid");
 	else STRING_TO_UWU("android", "Nyandroid"); // android at the end because it could be not considered as an actual distribution of gnu/linux
 
 	// BSD
